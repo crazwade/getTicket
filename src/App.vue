@@ -30,9 +30,10 @@
   <div class="ticket-times">
     <div style="margin-top: 10px" v-for="(time, index) in ticketTimes" :key="index" class="time-list">
       <span class="item">運行紀錄: {{ time.count }}</span>
+      <br>
       <span class="item">{{ time.orderTimeTitle }}:</span>
       <span class="item">{{ time.orderTimeDate }}</span>
-      ||
+      <br>
       <span class="item">{{ time.bookTimeTitle }}:</span>
       <span class="item">{{ time.bookTimeDate }}</span>
     </div>
