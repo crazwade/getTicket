@@ -1,4 +1,31 @@
 <template>
+  <div>
+    <a href="https://klyscwdyg.com.tw" target="_blank">苓雅運動中心</a>
+    <el-alert
+      title="請確保你已經登入 苓雅運動中心"
+      effect="dark"
+      type="success"
+      show-icon
+      class="alert-message"
+      :closable="false"
+    />
+    <el-alert
+      title="建議在搶票前五分鐘登入並使用"
+      effect="dark"
+      type="success"
+      show-icon
+      class="alert-message"
+      :closable="false"
+    />
+    <el-alert
+      title="※在session有效的情形下，該搶票才會是有效的"
+      effect="dark"
+      type="success"
+      show-icon
+      class="alert-message"
+      :closable="false"
+    />
+  </div>
   <el-button type="primary" @click="getTicket">TICKET</el-button>
   <div class="ticket-times">
     <div style="margin-top: 10px" v-for="(time, index) in ticketTimes" :key="index" class="time-list">
@@ -100,5 +127,9 @@ const getTicket = (): void => {
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+.alert-message {
+  margin-bottom: 10px;
 }
 </style>
