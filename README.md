@@ -1,6 +1,5 @@
-# Schedule-Tickets-for-club-sport
-## Use Step
-1. 進入網站: https://bwd.xuanen.com.tw/wd16.aspx
-2. 登入自身帳號
-3. 複製`index.js`程式碼到開發人員項目內
-4. 時間到時點擊執行
+# 搶籃球場的小程式
+
+## step
+1. 先登入苓雅運動中心(釋出位置前的五分鐘登入)
+2. 依據規則使用即可
