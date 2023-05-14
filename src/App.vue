@@ -1,12 +1,4 @@
 <template>
-  <div>
-    <a target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
   <el-button type="primary" @click="getTicket">TICKET</el-button>
   <div class="ticket-times">
     <div style="margin-top: 10px" v-for="(time, index) in ticketTimes" :key="index" class="time-list">
@@ -34,7 +26,7 @@ interface Time {
 const ticketTimes: Ref<Time[]> = ref([]);
 
 const getTicket = (): void => {
-  let count: number = 0;
+  let count: number = 1;
   // 正式要搶的場地
   // 籃球全場 第一場
   const bookDate: string | null = prompt('哪一天要打球? (自動選下午3-5) \n \n 例如: 2022/01/01');
