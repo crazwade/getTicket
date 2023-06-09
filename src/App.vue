@@ -88,7 +88,7 @@ const getTicket = (): void => {
       ticketTimes.value.unshift(ticketTime);
     }
     count ++;
-  }, 500);
+  }, 200);
 
   function postData(url: string): Promise<any> {
     return fetch(url, {
